@@ -1,0 +1,24 @@
+h1{
+    color:rgb(92, 137, 132);
+    font-size: 70px;
+    text-align: center;
+    
+}
+.intro{
+    font-size: 35px;
+    text-align: center;
+}
+a{
+    color:rgb(82, 101, 177);
+    font-size: 30px;
+    text-align: center;
+    margin-left: 40px;
+}
+img{
+    margin-left: 40px;
+    margin-top: 40px;
+}
+iframe{
+    margin-left: 40px;
+    margin-top: 40px;
+}
