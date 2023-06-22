@@ -1,18 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
 h1{
     color:rgb(92, 137, 132);
     font-size: 70px;
     text-align: center;
-    
 }
 .intro{
-    font-size: 35px;
+    font-size: 25px;
     text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    color: rgb(79,71,69);
 }
 a{
     color:rgb(82, 101, 177);
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
-    margin-left: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 img{
     margin-left: 40px;
@@ -21,4 +30,22 @@ img{
 iframe{
     margin-left: 40px;
     margin-top: 40px;
+}
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.desc{
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+.box{
+    background-color:rgb(201, 212, 221);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 25px;
 }
