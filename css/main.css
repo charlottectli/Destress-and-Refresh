@@ -44,8 +44,11 @@ iframe{
     text-align: center;
 }
 .box{
-    background-color:rgb(201, 212, 221);
+    background-color:rgb(194, 213, 228);
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 25px;
+}
+form{
+    padding: 20px;
 }
