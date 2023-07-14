@@ -7,185 +7,267 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body style="background-color:rgb(237, 234, 224);"></bodystyle><div class="centered-content">
+<body style="background-color:#e8e7e3"></bodystyle>
+    <nav>
+        <div class="logo">
+            <img src="img/Heart logo.png"
+            height="60"
+            width="60">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="academic.html">Academic</a></li>
+            <li><a href="future.html">Future</a></li>
+            <li><a href="relationship.html">Relationship</a></li>
+            <li><a href="social-media.html">Social Media</a></li>
+            <li><a href="mental-health.html">Anxiety & Depression</a></li>
+           </ul>
+    </nav>
+    
+    <div class="centered-content">
     <h1>Academic Stress</h1>
     <p class="intro">Academic stress is nearly inevitable because school can definitely be hard at times! But with the right mindset and work habits, you'll be able to get through it.</p>
     
     <p class="section">Journaling Activity</p>
 
     <form id="part1">
-        <p class="activity-text">This is a journaling activity that aims to relieve academic stress by using the Cognitive Behavioral Therapy's ABC Approach (antecedents, behaviors, consequences). All data collected from this form is anonymous and will be saved on your laptop.</p><br>
+        <p class="activity-text">This is a journaling activity that aims to relieve academic stress by using the Cognitive Behavioral Therapy's ABC Approach (antecedents, behaviors, consequences). All data collected is anonymous and will be saved on your laptop.</p><br>
 
         <button type="button" id="start">Start</button><br><br>
     </form>
 
-    <form id="part2">
+    <form id="part2" style="display: none;">
+        <br>
+        Date: 
+        <input type="date" id="date"><br><br>
         <p class="activity-text">Before starting the activity, rate the intensity you currently feel for each stress-related emotion below:</p><br>
         Agitated:
-        <input type="radio" name="agitated-before" value="none">
-        <label for="none">None</label>
-        <input type="radio" name="agitated-before"
-        value="mild">
-        <label for="mild">Mild</label>
-        <input type="radio" name="agitated-before" value="moderate">
-        <label for="moderate">Moderate</label>
-        <input type="radio" name="agitated-before" value="strong">
-        <label for="strong">Strong</label><br><br>
+        <label><input type="radio" name="agitated-before" value="none">None</label>
+        <label><input type="radio" name="agitated-before"
+        value="mild">Mild</label>
+        <label><input type="radio" name="agitated-before" value="moderate">Moderate</label>
+        <label><input type="radio" name="agitated-before" value="strong">Strong</label>
+        <br><br>
 
         Anxious:
-        <input type="radio" name="anxious-before" value="none">
-        <label for="none">None</label>
-        <input type="radio" name="anxious-before"
-        value="mild">
-        <label for="mild">Mild</label>
-        <input type="radio" name="anxious-before" value="moderate">
-        <label for="moderate">Moderate</label>
-        <input type="radio" name="anxious-before" value="strong">
-        <label for="strong">Strong</label><br><br>
+        <label><input type="radio" name="anxious-before" value="none">None</label>
+        <label><input type="radio" name="anxious-before"
+        value="mild">Mild</label>
+        <label><input type="radio" name="anxious-before" value="moderate">Moderate</label>
+        <label><input type="radio" name="anxious-before" value="strong">Strong</label>
+        <br><br>
 
         Frustrated:
-        <input type="radio" name="frustrated-before" value="none">
-        <label for="none">None</label>
-        <input type="radio" name="frustrated-before"
-        value="mild">
-        <label for="mild">Mild</label>
-        <input type="radio" name="frustrated-before" value="moderate">
-        <label for="moderate">Moderate</label>
-        <input type="radio" name="frustrated-before" value="strong">
-        <label for="strong">Strong</label><br><br>
+        <label><input type="radio" name="frustrated-before" value="none">None</label>
+        <label><input type="radio" name="frustrated-before"
+        value="mild">Mild</label>
+        <label><input type="radio" name="frustrated-before" value="moderate">Moderate</label>
+        <label><input type="radio" name="frustrated-before" value="strong">Strong</label>
+        <br><br>
 
         Overwhelmed:
-        <input type="radio" name="overwhelmed-before" value="none">
-        <label for="none">None</label>
-        <input type="radio" name="overwhelmed-before"
-        value="mild">
-        <label for="mild">Mild</label>
-        <input type="radio" name="overwhelmed-before" value="moderate">
-        <label for="moderate">Moderate</label>
-        <input type="radio" name="overwhelmed-before" value="strong">
-        <label for="strong">Strong</label><br><br>
+        <label><input type="radio" name="overwhelmed-before" value="none">None</label>
+        <label><input type="radio" name="overwhelmed-before"
+        value="mild">Mild</label>
+        <label><input type="radio" name="overwhelmed-before" value="moderate">Moderate</label>
+        <label><input type="radio" name="overwhelmed-before" value="strong">Strong</label>
+        <br><br>
         
         Sad:
-        <input type="radio" name="sad-before" value="none">
-        <label for="none">None</label>
-        <input type="radio" name="sad-before"
-        value="mild">
-        <label for="mild">Mild</label>
-        <input type="radio" name="sad-before" value="moderate">
-        <label for="moderate">Moderate</label>
-        <input type="radio" name="sad-before" value="strong">
-        <label for="strong">Strong</label><br><br><br>
+        <label><input type="radio" name="sad-before" value="none">None</label>
+        <label><input type="radio" name="sad-before"
+        value="mild">Mild</label>
+        <label><input type="radio" name="sad-before" value="moderate">Moderate</label>
+        <label><input type="radio" name="sad-before" value="strong">Strong</label>
+        <br><br>
 
         <button type="button" id="back2">Back</button>
         <button type="button" id="next2">Next</button><br><br><br><br>
-    <form>
+    </form>
 
-    <form id="part3">
+    <form id="part3" style="display: none;">
         What academic struggles have you been facing recently?<br><br>
-        <textarea rows="8" cols="80">
+        <textarea id="struggles" rows="8" cols="80">
         </textarea><br><br><br>
 
         What were your thoughts and reactions during those situations? Were they negative?<br><br>
-        <textarea rows="8" cols="80">
+        <textarea id="reactions" rows="8" cols="80">
         </textarea><br><br><br>
 
         If you answered yes to the second part of the question above, what's a more positive way of thinking about this situation?<br><br>
-        <textarea rows="8" cols="80">
+        <textarea id="positive-thinking" rows="8" cols="80">
         </textarea><br><br><br>
 
         How do you plan on approaching these situations in the near future?<br><br>
-        <textarea rows="8" cols="80">
+        <textarea id="plan" rows="8" cols="80">
         </textarea><br><br><br>
 
         <button type="button" id="back3">Back</button>
         <button type="button" id="next3">Next</button><br><br>
     </form>
 
-    <form id="part4">
+    <form onsubmit="saveActivity(event)" id="part4" style="display: none;">
     <p class="activity-text">After completing the activity, rate the intensity you currently feel for each stress-related emotion below:</p><br>
     Agitated:
-    <input type="radio" name="agitated-before" value="none">
-    <label for="none">None</label>
-    <input type="radio" name="agitated-before"
-    value="mild">
-    <label for="mild">Mild</label>
-    <input type="radio" name="agitated-before" value="moderate">
-    <label for="moderate">Moderate</label>
-    <input type="radio" name="agitated-before" value="strong">
-    <label for="strong">Strong</label><br><br>
+    <label><input type="radio" name="agitated-after" value="none">None</label>
+    <label><input type="radio" name="agitated-after"
+    value="mild">Mild</label>
+    <label><input type="radio" name="agitated-after" value="moderate">Moderate</label>
+    <label><input type="radio" name="agitated-after" value="strong">Strong</label>
+    <br><br>
 
     Anxious:
-    <input type="radio" name="anxious-before" value="none">
-    <label for="none">None</label>
-    <input type="radio" name="anxious-before"
-    value="mild">
-    <label for="mild">Mild</label>
-    <input type="radio" name="anxious-before" value="moderate">
-    <label for="moderate">Moderate</label>
-    <input type="radio" name="anxious-before" value="strong">
-    <label for="strong">Strong</label><br><br>
+    <label><input type="radio" name="anxious-after" value="none">None</label>
+    <label><input type="radio" name="anxious-after"
+    value="mild">Mild</label>
+    <label><input type="radio" name="anxious-after" value="moderate">Moderate</label>
+    <label><input type="radio" name="anxious-after" value="strong">Strong</label>
+    <br><br>
 
     Frustrated:
-    <input type="radio" name="frustrated-before" value="none">
-    <label for="none">None</label>
-    <input type="radio" name="frustrated-before"
-    value="mild">
-    <label for="mild">Mild</label>
-    <input type="radio" name="frustrated-before" value="moderate">
-    <label for="moderate">Moderate</label>
-    <input type="radio" name="frustrated-before" value="strong">
-    <label for="strong">Strong</label><br><br>
+    <label><input type="radio" name="frustrated-after" value="none">None</label>
+    <label><input type="radio" name="frustrated-after"
+    value="mild">Mild</label>
+    <label><input type="radio" name="frustrated-after" value="moderate">Moderate</label>
+    <label><input type="radio" name="frustrated-after" value="strong">Strong</label>
+    <br><br>
 
     Overwhelmed:
-    <input type="radio" name="overwhelmed-before" value="none">
-    <label for="none">None</label>
-    <input type="radio" name="overwhelmed-before"
-    value="mild">
-    <label for="mild">Mild</label>
-    <input type="radio" name="overwhelmed-before" value="moderate">
-    <label for="moderate">Moderate</label>
-    <input type="radio" name="overwhelmed-before" value="strong">
-    <label for="strong">Strong</label><br><br>
+    <label><input type="radio" name="overwhelmed-after" value="none">None</label>
+    <label><input type="radio" name="overwhelmed-after"
+    value="mild">Mild</label>
+    <label><input type="radio" name="overwhelmed-after" value="moderate">Moderate</label>
+    <label><input type="radio" name="overwhelmed-after" value="strong">Strong</label>
+    <br><br>
     
     Sad:
-    <input type="radio" name="sad-before" value="none">
-    <label for="none">None</label>
-    <input type="radio" name="sad-before"
-    value="mild">
-    <label for="mild">Mild</label>
-    <input type="radio" name="sad-before" value="moderate">
-    <label for="moderate">Moderate</label>
-    <input type="radio" name="sad-before" value="strong">
-    <label for="strong">Strong</label><br><br><br>
+    <label><input type="radio" name="sad-after" value="none">None</label>
+    <label><input type="radio" name="sad-after"
+    value="mild">Mild</label>
+    <label><input type="radio" name="sad-after" value="moderate">Moderate</label>
+    <label><input type="radio" name="sad-after" value="strong">Strong</label>
+    <br><br><br>
 
     Is there anything you think could be improved for this journaling activity? Was it helpful in relieving your stress?<br><br>
-    <textarea rows="8" cols="80">
+    <textarea id="feedback" rows="8" cols="80">
     </textarea><br><br>
 
-    <button type="button" id="save">Save</button><br><br>
+    <button type="button" id="back4">Back</button>
+    <input type="submit" value="Save" onclick="openPopup()"/><br><br><br><br>
+
 </form>
 
+<div class="pop-up" id="popup" style="display:none">
+    <h2>Activity Complete</h2>
+    <p>Your journaling activity has been saved!</p>
+    <button type="button" onclick = "openSavedActivity()">View Activity</button>
+    <button type="button" onclick="closePopup()">Exit</buttons>
+</div>
+
 <script>
-    var form1 = document.getElementById("form1");
-    var form2 = document.getElementById("form2");
-    var form3 = document.getElementById("form3");
-    var form4 = document.getElementById("form4");
+    let popup = document.getElementById("popup");
+    let part1 = document.getElementById("part1");
+    let part2 = document.getElementById("part2");
+    let part3 = document.getElementById("part3");
+    let part4 = document.getElementById("part4");
 
-    var start = document.getElementById("start");
-    var next2 = document.getElementById("next2");
-    var back2 = document.getElementById("back2");
-    var next3 = document.getElementById("next3");
-    var back3 = document.getElementById("back3");
-    var save = document.getElementById("save");
+    function openPopup(){
+        popup.style.display = "block";
+        part4.style.display = "none";
+    }
 
+    function closePopup(){
+        popup.style.display = "none";
+        part1.reset();
+        part2.reset();
+        part3.reset();
+        part4.reset();
+        part1.style.display = "block";
+    }
 
-
-
-
+    function openSavedActivity(){
+        window.open("saved-activity.html", "_blank");
+    }
 </script>
 
+<script>
+    var form1 = document.getElementById("part1");
+    var form2 = document.getElementById("part2");
+    var form3 = document.getElementById("part3");
+    var form4 = document.getElementById("part4");
 
+    var start = document.getElementById("start");
+    start.addEventListener("click", ()=>{displayFormIndex(1);});
+    var next2 = document.getElementById("next2");
+    next2.addEventListener("click", ()=>{displayFormIndex(2);});
+    var back2 = document.getElementById("back2");
+    back2.addEventListener("click", ()=>{displayFormIndex(0);});
+    var next3 = document.getElementById("next3");
+    next3.addEventListener("click", ()=>{displayFormIndex(3);});
+    var back3 = document.getElementById("back3");
+    back3.addEventListener("click", ()=>{displayFormIndex(1);});
+    var back4 = document.getElementById("back4");
+    back4.addEventListener("click", ()=>{displayFormIndex(2);});
+    var save = document.getElementById("save");
 
+    var formOrder = [form1, form2, form3, form4];
+
+    function displayFormIndex(currentIndex){
+        for(i=0; i<formOrder.length+1; i++){
+            if(i==currentIndex){
+                formOrder[i].style.display="initial";
+            }else{
+                formOrder[i].style.display="none";
+            }
+        }
+    } 
+</script>
+
+<script>
+    function saveActivity(event){
+        event.preventDefault();
+        var date =  Array.from(document.getElementsByName("date")).find(date => date.checked).value;
+        var agitatedBefore = Array.from(document.getElementsByName("agitated-before")).find(radio => radio.checked).value;
+        var anxiousBefore = Array.from(document.getElementsByName("anxious-before")).find(radio => radio.checked).value;
+        var frustratedBefore = Array.from(document.getElementsByName("frustrated-before")).find(radio => radio.checked).value;
+        var overwhelmedBefore = Array.from(document.getElementsByName("overwhelmed-before")).find(radio => radio.checked).value;
+        var sadBefore = Array.from(document.getElementsByName("sad-before")).find(radio => radio.checked).value;
+
+        var struggles = document.getElementById("struggles").value;
+        var reactions = document.getElementById("reactions").value;
+        var positiveThinking = document.getElementById("positive-thinking").value;
+        var plan = document.getElementById("plan").value;
+
+        var agitatedAfter = Array.from(document.getElementsByName("agitated-before")).find(radio => radio.checked).value;
+        var anxiousAfter = Array.from(document.getElementsByName("anxious-before")).find(radio => radio.checked).value;
+        var frustratedAfter = Array.from(document.getElementsByName("frustrated-before")).find(radio => radio.checked).value;
+        var overwhelmedAfter = Array.from(document.getElementsByName("overwhelmed-before")).find(radio => radio.checked).value;
+        var sadAfter = Array.from(document.getElementsByName("sad-before")).find(radio => radio.checked).value;
+
+        var feedback = document.getElementById("feedback").value;
+
+        localStorage.setItem('ls_date', date);
+
+        localStorage.setItem('ls_agitatedBefore', agitatedBefore);
+        localStorage.setItem('ls_anxiousBefore', anxiousBefore);
+        localStorage.setItem('ls_frustratedBefore', frustratedBefore);
+        localStorage.setItem('ls_overwhelmedBefore', overwhelmedBefore);
+        localStorage.setItem('ls_sadBefore', sadBefore);
+
+        localStorage.setItem('ls_struggles', struggles);
+        localStorage.setItem('ls_reactions', reactions);
+        localStorage.setItem('ls_positiveThinking', positiveThinking);
+        localStorage.setItem('ls_plan', plan);
+    
+        localStorage.setItem('ls_agitatedAfter', agitatedAfter);
+        localStorage.setItem('ls_anxiousAfter', anxiousAfter);
+        localStorage.setItem('ls_frustratedAfter', frustratedAfter);
+        localStorage.setItem('ls_overwhelmedAfter', overwhelmedAfter);
+        localStorage.setItem('ls_sadAfter', sadAfter);
+
+        localStorage.setItem('ls_feedback', feedback);
+    }
+</script>
 
 <p class="section">Resources</p>
 

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Activity</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body style="background-color:#e8e7e3"></bodystyle>
+    <nav>
+        <div class="logo">
+            <img src="img/Heart logo.png"
+            height="60"
+            width="60">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="academic.html">Academic</a></li>
+            <li><a href="future.html">Future</a></li>
+            <li><a href="relationship.html">Relationship</a></li>
+            <li><a href="social-media.html">Social Media</a></li>
+            <li><a href="mental-health.html">Anxiety & Depression</a></li>
+           </ul>
+    </nav>
+    
+    <h1>Saved Activity</h1>
+    <p class="section">Academic Journaling Activity @</p>
+
+    <div id="date-result"></div>
+    <script>
+        document.getElementById("date-result").innerHTML = localStorage.getItem("ls_date");
+    </script>
+
+    <table>
+        <tr>
+            <th>Agitated</th>
+            <th>
+                <div id="agitated-before-result"></div>
+                <script>
+                    document.getElementById("agitated-before-result").innerHTML = localStorage.getItem("ls_agitatedBefore");
+                </script>
+            </th>
+        </tr>
+        <tr>
+            <th>Anxious</th>
+            <th>
+                <div id="anxious-before-result"></div>
+                <script>
+                    document.getElementById("anxious-before-result").innerHTML = localStorage.getItem("ls_anxiousBefore");
+                </script>
+            </th>
+        </tr>
+        <tr>
+            <th>Frustrated</th>
+            <th>
+                <div id="frustrated-before-result"></div>
+                <script>
+                    document.getElementById("frustrated-before-result").innerHTML = localStorage.getItem("ls_frustratedBefore");
+                </script>
+            </th>
+        </tr>
+        <tr>
+            <th>Overwhelmed</th>
+            <th>
+                <div id="overwhelmed-before-result"></div>
+                <script>
+                    document.getElementById("overwhelmed-before-result").innerHTML = localStorage.getItem("ls_overwhelmedBefore");
+                </script>
+            </th>
+        </tr>
+        <tr>
+            <th>Sad</th>
+            <th>
+                <div id="sad-before-result"></div>
+                <script>
+                    document.getElementById("sad-before-result").innerHTML = localStorage.getItem("ls_sadBefore");
+                </script>
+            </th>
+        </tr>
+        <tr>
+            <th>What academic struggles have you been facing recently?</th>
+            <th>
+                <div id="struggles-result"></div>
+                <script>
+                    document.getElementById("struggles-result").innerHTML = localStorage.getItem("ls_struggles");
+                </script>
+            </th>
+        </tr>
+        <tr>
+            <th>What were your thoughts and reactions during those situations? Were they negative?</th>
+            <th>
+                <div id="reactions-result"></div>
+                <script>
+                    document.getElementById("reactions-result").innerHTML = localStorage.getItem("ls_reactions");
+                </script>
+            </th>
+        </tr>
+        <tr>
+            <th>If you answered yes to the second part of the question above, what's a more positive way of thinking about this situation?</th>
+            <th>
+                <div id="positive-thinking-result"></div>
+                <script>
+                    document.getElementById("positive-thinking-result").innerHTML = localStorage.getItem("ls_positiveThinking");
+                </script>
+            </th>
+        </tr>
+        <tr>
+            <th>How do you plan on approaching these situations in the near future?</th>
+            <th>
+                <div id="plan-result"></div>
+                <script>
+                    document.getElementById("plan-result").innerHTML = localStorage.getItem("ls_plan");
+                </script>
+            </th>
+        </tr>
+        <tr>
+            <th>Agitated</th>
+            <th>
+                <div id="agitated-after-result"></div>
+                <script>
+                    document.getElementById("agitated-after-result").innerHTML = localStorage.getItem("ls_agitatedAfter");
+                </script>
+            </th>
+        </tr>
+        <tr>
+            <th>Anxious</th>
+            <th>
+                <div id="anxious-after-result"></div>
+                <script>
+                    document.getElementById("anxious-after-result").innerHTML = localStorage.getItem("ls_anxiousAfter");
+                </script>
+            </th>
+        </tr>
+        <tr>
+            <th>Frustrated</th>
+            <th>
+                <div id="frustrated-after-result"></div>
+                <script>
+                    document.getElementById("frustrated-after-result").innerHTML = localStorage.getItem("ls_frustratedAfter");
+                </script>
+            </th>
+        </tr>
+        <tr>
+            <th>Overwhelmed</th>
+            <th>
+                <div id="overwhelmed-after-result"></div>
+                <script>
+                    document.getElementById("overwhelmed-after-result").innerHTML = localStorage.getItem("ls_overwhelmedAfter");
+                </script>
+            </th>
+        </tr> 
+        <tr>
+            <th>Sad</th>
+            <th>
+                <div id="sad-after-result"></div>
+                <script>
+                    document.getElementById("sad-after-result").innerHTML = localStorage.getItem("ls_sadAfter");
+                </script>
+            </th>
+        </tr>
+        <tr>
+            <th> Is there anything you think could be improved for this journaling activity? Was it helpful in relieving your stress?</th>
+            <th>
+                <div id="feedback-result"></div>
+                <script>
+                    document.getElementById("feedback-result").innerHTML = localStorage.getItem("ls_feedback");
+                </script>
+            </th>
+        </tr>
+    </table>
+    
+</body>
