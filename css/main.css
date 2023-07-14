@@ -116,3 +116,14 @@ textarea{
     margin-bottom: 20px;
     color: rgb(79,71,69);
 }
+button{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 180px;
+    height: 60px;
+}
+#part2{
+    left: 450px;
+}
