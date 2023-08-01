@@ -21,6 +21,7 @@
             <li><a href="relationship.html">Relationship</a></li>
             <li><a href="social-media.html">Social Media</a></li>
             <li><a href="mental-health.html">Anxiety & Depression</a></li>
+            <li><a href="about.html">About</a></li>
            </ul>
     </nav>
     
@@ -31,15 +32,15 @@
     <p class="section">Journaling Activity</p>
 
     <form id="part1">
-        <p class="activity-text">This is a journaling activity that aims to relieve academic stress by using the Cognitive Behavioral Therapy's ABC Approach (antecedents, behaviors, consequences). All data collected is anonymous and will be saved on your laptop.</p><br>
+        <p class="activity-text">This is a journaling activity that aims to relieve academic stress by using the Cognitive Behavioral Therapy's ABC Approach (antecedents, behaviors, consequences). All data collected is anonymous and will be saved on your laptop.</p><br/>
 
-        <button type="button" id="start">Start</button><br><br>
+        <button type="button" id="start">Start</button><br><br/>
     </form>
 
     <form id="part2" style="display: none;">
         <br>
         Date: 
-        <input type="date" id="date"><br><br>
+        <input type="date" id="date" required/><br/><br/>
         <p class="activity-text">Before starting the activity, rate the intensity you currently feel for each stress-related emotion below:</p><br>
         Agitated:
         <label><input type="radio" name="agitated-before" value="none">None</label>
@@ -153,7 +154,7 @@
     </textarea><br><br>
 
     <button type="button" id="back4">Back</button>
-    <input type="submit" value="Save" onclick="openPopup()"/><br><br><br><br>
+    <input type="submit" value="Save" onclick="openPopup()"><br><br><br><br>
 
 </form>
 
@@ -225,8 +226,14 @@
 
 <script>
     function saveActivity(event){
+        console.log("save activity is running");
         event.preventDefault();
-        var date =  Array.from(document.getElementsByName("date")).find(date => date.checked).value;
+        var date = document.getElementById("date").value;
+        console.log(date);
+        console.log(document.getElementsByName("agitated-before"));
+        console.log(Array.from(document.getElementsByName("agitated-before")));
+        console.log(Array.from(document.getElementsByName("agitated-before")).find(radio => radio.checked));
+
         var agitatedBefore = Array.from(document.getElementsByName("agitated-before")).find(radio => radio.checked).value;
         var anxiousBefore = Array.from(document.getElementsByName("anxious-before")).find(radio => radio.checked).value;
         var frustratedBefore = Array.from(document.getElementsByName("frustrated-before")).find(radio => radio.checked).value;
@@ -238,15 +245,16 @@
         var positiveThinking = document.getElementById("positive-thinking").value;
         var plan = document.getElementById("plan").value;
 
-        var agitatedAfter = Array.from(document.getElementsByName("agitated-before")).find(radio => radio.checked).value;
-        var anxiousAfter = Array.from(document.getElementsByName("anxious-before")).find(radio => radio.checked).value;
-        var frustratedAfter = Array.from(document.getElementsByName("frustrated-before")).find(radio => radio.checked).value;
-        var overwhelmedAfter = Array.from(document.getElementsByName("overwhelmed-before")).find(radio => radio.checked).value;
-        var sadAfter = Array.from(document.getElementsByName("sad-before")).find(radio => radio.checked).value;
+        var agitatedAfter = Array.from(document.getElementsByName("agitated-after")).find(radio => radio.checked).value;
+        var anxiousAfter = Array.from(document.getElementsByName("anxious-after")).find(radio => radio.checked).value;
+        var frustratedAfter = Array.from(document.getElementsByName("frustrated-after")).find(radio => radio.checked).value;
+        var overwhelmedAfter = Array.from(document.getElementsByName("overwhelmed-after")).find(radio => radio.checked).value;
+        var sadAfter = Array.from(document.getElementsByName("sad-after")).find(radio => radio.checked).value;
 
         var feedback = document.getElementById("feedback").value;
 
         localStorage.setItem('ls_date', date);
+        console.log("date is saved");
 
         localStorage.setItem('ls_agitatedBefore', agitatedBefore);
         localStorage.setItem('ls_anxiousBefore', anxiousBefore);
@@ -266,6 +274,7 @@
         localStorage.setItem('ls_sadAfter', sadAfter);
 
         localStorage.setItem('ls_feedback', feedback);
+        console.log("saved activity has finished running");
     }
 </script>
 
